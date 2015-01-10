@@ -1,5 +1,5 @@
 
-// creates two basemap layers
+// creates two tiled layers to use as basemaps
 var bright = L.tileLayer("https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png", {
     attribution: "<a href='http://www.mapbox.com/about/maps/' target='_blank'>Terms &amp; Feedback</a>"
 });
@@ -30,8 +30,6 @@ function getStyle(feature) {
 
 // the seismic risks layer, styled using functions above
 var seismic = L.geoJson(seismic_risk, {style:getStyle});
-
-//var seismic = L.geoJson(seismic_risk);
 
 
 // the url to send to the USGS API
@@ -100,8 +98,8 @@ map.addControl(layersControl);
 
 // Uses jQuery to add some responsive design, resetting zoom levels for small and very large screens
 function responsive() {
-     width = $( window ).width();
-     height = $( window ).height();
+     width = $(window).width();
+     height = $(window).height();
     if (width < 768) {
         // set the zoom level to 3
         map.setZoom(3);
