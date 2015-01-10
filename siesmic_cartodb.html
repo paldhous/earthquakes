@@ -26,7 +26,7 @@
         var map = new L.map('map').setView([40, -100], 4);  
 
         L.tileLayer('https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png', {
-        attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
+        attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a> Data: U.S. Geological Survey'
         }).addTo(map);
 
         cartodb.createLayer(map, 'http://aldhouskdmc.cartodb.com/api/v2/viz/e7640620-935f-11e4-a70d-0e4fddd5de28/viz.json')
