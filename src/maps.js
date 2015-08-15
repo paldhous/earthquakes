@@ -33,7 +33,7 @@ var seismic = L.geoJson(seismic_risk, {style:getStyle});
 
 
 // the url to send to the USGS API
-var quakedataUrl = "http://comcat.cr.usgs.gov/fdsnws/event/1/query?starttime=1965-01-01T00:00:00&minmagnitude=6&format=geojson&latitude=39.828175&longitude=-98.5795&maxradiuskm=6000&orderby=magnitude&callback="
+var quakedataUrl = "http://earthquake.usgs.gov/fdsnws/event/1/query?starttime=1965-01-01T00:00:00&minmagnitude=6&format=geojson&latitude=39.828175&longitude=-98.5795&maxradiuskm=6000&orderby=magnitude&callback="
 
 
 // the quakes layer, uses leaflet.ajax to make API call
