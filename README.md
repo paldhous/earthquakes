@@ -9,5 +9,7 @@ Maps of seismic risk and historical quakes, for teaching/training:
 
 `seismic_cartodb.html` made with CartoDB and CartoDB.js
 
+`seismic_rleaflet.html` made with R and Leaflet htmlwidget (see `quakes.R`)
+
 Data source: U.S. Geological Survey
 
